@@ -1,0 +1,6 @@
+from flask_restx import reqparse
+
+pagination_parser = reqparse.RequestParser()
+pagination_parser.add_argument('page', type=int, required=False, default=1, help='Page number')
+pagination_parser.add_argument('images_per_page', type=int, required=False,
+                               default=10, choices=[10,20,50], help='Images per page')
