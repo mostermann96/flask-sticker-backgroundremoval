@@ -29,7 +29,7 @@ def configure_app(app):
             os.mkdir(settings.UPLOAD_FOLDER)
         except OSError:
             print("Creation of the directory %s failed" % settings.UPLOAD_FOLDER)
-    app.secret_key = '123'
+    app.secret_key = #Change This
     app.config['SWAGGER_UI_DOC_EXPANSION'] = settings.RESTPLUS_SWAGGER_EXPANSION
     app.config['RESTX_VALIDATE'] = settings.RESTPLUS_VAL
     app.config['RESTX_MASK_SWAGGER'] = settings.RESTPLUS_MASK_SWAGGER
